@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no tests specified\" && exit 0",
-    "build": "npm i && rollup -c ./rollup.config.js"
+    "build": "yarn && yarn add rollup -g && rollup -c ./rollup.config.js"
   },
   "keywords": [],
   "author": "OpenFaaS Ltd",
