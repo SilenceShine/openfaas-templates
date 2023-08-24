@@ -1,16 +1,14 @@
 {
   "name": "openfaas-node18",
   "version": "1.0.0",
-  "description": "",
+  "description": "node18 demo",
+  "author": "SilenceShine",
+  "license": "MIT",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no tests specified\" && exit 0",
     "build": "yarn && yarn add rollup -g && rollup -c ./rollup.config.js"
   },
-  "keywords": [],
-  "author": "OpenFaaS Ltd",
-  "license": "MIT",
   "dependencies": {
     "@rollup/plugin-node-resolve": "^15.2.1",
     "@rollup/plugin-commonjs": "^25.0.4",

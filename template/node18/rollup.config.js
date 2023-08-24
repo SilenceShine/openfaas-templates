@@ -10,6 +10,6 @@ export default {
     ],
     input: "index.js",
     output: {
-        file: "main.js",
+        file: "main.mjs",
     }
 }; 
