@@ -1,0 +1,5 @@
+language: node18-fastify
+fprocess: npm start
+welcome_message: |
+  node18-fastify
+
