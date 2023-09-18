@@ -9,8 +9,8 @@
   "type": "module",
   "scripts": {
     "test": "tap \"test/**/*.test.js\"",
-    "start": "fastify start -l info -P app.js",
-    "dev": "fastify start -w -l info -P app.js"
+    "start": "fastify start -p 8080 -l info app.js",
+    "dev": "fastify start -w -p 8080 -l info -P app.js"
   },
   "dependencies": {
     "@fastify/autoload": "^5.0.0",
