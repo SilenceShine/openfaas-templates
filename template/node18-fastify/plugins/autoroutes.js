@@ -30,7 +30,7 @@ export default fp(async function (fastify, opts, next) {
     dir = path.normalize(dir).replace(/\\/g, '/')
 
     for (const route of routes) {
-        console.log("route: " + route)
+        // console.log("route: " + route)
         let routeName = route
             .replace(dir, '')
             .replace('.js', '')
@@ -48,8 +48,8 @@ export default fp(async function (fastify, opts, next) {
             if (url.endsWith('/') && url !== '/') {
                 url = url.slice(0, -1)
             }
-            console.log("url:" + url)
-            console.log("method:" + method)
+            // console.log("url:" + url)
+            // console.log("method:" + method)
             fastify.route({
                 method: method.toUpperCase(), url: url, ...options,
             })

@@ -9,7 +9,7 @@
   "type": "module",
   "scripts": {
     "test": "tap \"test/**/*.test.js\"",
-    "start": "fastify start -p 8080 -l info app.js",
+    "start": "fastify start -a 0.0.0.0 -s 0.0.0.0 -p 8080 -l info app.js",
     "dev": "fastify start -w -p 8080 -l info -P app.js"
   },
   "dependencies": {

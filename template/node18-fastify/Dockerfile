@@ -10,6 +10,6 @@ WORKDIR /home/node
 COPY ./ ./
 
 # 设置镜像源 $$ 构建完整的镜像 拿到最终的js文件
-RUN yarn config set registry https://registry.npmmirror.com && cd function && yarn && cd /home/node && ls && yarn
+RUN yarn config set registry https://registry.npmmirror.com && cd function && yarn && cd /home/node && yarn
 
 CMD ["yarn", "start"]
