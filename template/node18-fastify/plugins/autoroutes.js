@@ -17,9 +17,10 @@ export default fp(async function (fastify, opts, next) {
         return next(new Error(`${ERROR_LABEL} dir ${dir} must be a directory`))
     }
 
-    let routes = await glob(`${dir}/**/[!.]*.{ts,js}`, {
+    let routes = await glob(`${dir}/**/[!._]!(*.test).{ts,js}`, {
         ignore: [
-            `./function/node_modules/**`,
+            `${dir}/node_modules/**`,
+            `./**/[._]*/**`
         ],
     });
 
